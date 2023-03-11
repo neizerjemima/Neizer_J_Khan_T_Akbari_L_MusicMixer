@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <svg id="blue-bird_front" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 165.81 462.1">
+    <defs>
+      <style>
+        .blue_lw_feather1 {
+          fill: url(#bird-bluegrad-3);
+        }
+
+        .blue_rw_feather1 {
+          fill: url(#bird-bluegrad-6);
+        }
+
+        .blue_rw_feather2 {
+          fill: url(#bird-bluegrad-4);
+        }
+
+        .blue_head-feather, .blue_body {
+          fill: #0071bc;
+        }
+
+        .blue_lw_feather2 {
+          fill: url(#bird-bluegrad);
+        }
+
+        .blue_rw_feather3 {
+          fill: url(#bird-bluegrad-5);
+        }
+
+        .blue_lw_feather3 {
+          fill: url(#bird-bluegrad-2);
+        }
+      </style>
+      <script>
+        const blueBirdFront = document.querySelector('#blue-bird_front');
+
+        function logblueBirdId() {
+          console.log('i would tell you a bird pun, but that would be Fowl');
+        }      
+
+        blueBirdFront.addEventListener('click', logblueBirdId);
+      </script>
+      <linearGradient id="bird-bluegrad" x1="-1013.65" y1="332.04" x2="-1012.53" y2="306.64" gradientTransform="translate(-973.68 -71.13) rotate(-177.49) scale(1 -1)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0071bc"/>
+        <stop offset=".37" stop-color="#006bb1"/>
+        <stop offset="1" stop-color="#005b97"/>
+      </linearGradient>
+      <linearGradient id="bird-bluegrad-2" data-name="bird-bluegrad" x1="-1130.82" y1="315.73" x2="-1132.94" y2="290.51" gradientTransform="translate(-1100.11 -3.47) rotate(-180) scale(1 -1)" xlink:href="#bird-bluegrad"/>
+      <linearGradient id="bird-bluegrad-3" data-name="bird-bluegrad" x1="-880.04" y1="374.04" x2="-875.07" y2="349.48" gradientTransform="translate(-771.28 -242.21) rotate(-168.56) scale(1 -1)" xlink:href="#bird-bluegrad"/>
+      <linearGradient id="bird-bluegrad-4" data-name="bird-bluegrad" x1="193.18" y1="384.06" x2="194.3" y2="358.65" gradientTransform="translate(-68.46 -71.13) rotate(-2.51)" xlink:href="#bird-bluegrad"/>
+      <linearGradient id="bird-bluegrad-5" data-name="bird-bluegrad" x1="72.79" y1="213.35" x2="70.66" y2="188.12" gradientTransform="translate(203.01 455.91) rotate(-180)" xlink:href="#bird-bluegrad"/>
+      <linearGradient id="bird-bluegrad-6" data-name="bird-bluegrad" x1="304.11" y1="612.64" x2="309.08" y2="588.08" gradientTransform="translate(-270.86 -242.21) rotate(-11.44)" xlink:href="#bird-bluegrad"/>
+    </defs>
+    <g id="bluebird-front">
+      <g id="blue_wings">
+        <g id="blue_left-wing">
+          <path class="blue_lw_feather2" d="m32.82,380.23h0c-9.43-1.01-17.06-13.17-17.04-27.18l.23-153.13c.01-9.34,5.13-16.37,11.42-15.7h0c3.14.34,5.68,4.39,5.67,9.05l-.29,186.96Z"/>
+          <path class="blue_lw_feather3" d="m35.99,179.73h0c3.12,0,5.66,2.54,5.66,5.66v190.63h0c-9.38,0-17-7.62-17-17v-167.95c0-6.26,5.08-11.34,11.34-11.34Z" transform="translate(-23.23 3.77) rotate(-4.82)"/>
+          <path class="blue_lw_feather1" d="m14.39,375.45h0c-9.31-3.17-15.66-16.82-14.17-30.5l16.23-149.57c.99-9.12,6.83-14.81,13.04-12.7h0c3.1,1.05,5.21,5.6,4.72,10.15l-19.81,182.61Z"/>
+        </g>
+        <g id="blue_right-wing">
+          <path class="blue_rw_feather2" d="m132.99,379.32h0c9.43-1.01,17.06-13.17,17.04-27.18l-.23-153.13c-.01-9.34-5.13-16.37-11.42-15.7h0c-3.14.34-5.68,4.39-5.67,9.05l.29,186.96Z"/>
+          <path class="blue_rw_feather3" d="m141.16,178.82h0v190.63c0,3.12-2.54,5.66-5.66,5.66h0c-6.26,0-11.34-5.08-11.34-11.34v-167.95c0-9.38,7.62-17,17-17Z" transform="translate(241.59 564.09) rotate(-175.18)"/>
+          <path class="blue_rw_feather1" d="m151.42,374.54h0c9.31-3.17,15.66-16.82,14.17-30.5l-16.23-149.57c-.99-9.12-6.83-14.81-13.04-12.7h0c-3.1,1.05-5.21,5.6-4.72,10.15l19.81,182.61Z"/>
+        </g>
+      </g>
+      <path id="blue_legs" d="m69.43,303.59v145.87c0,.33-.07.65-.2.94-.17.99-.93,1.83-1.97,2.05l-14.39,2.98c-1.37.28-2.7-.6-2.99-1.96s.6-2.7,1.96-2.99l12.91-2.67v-144.21c0-1.29,1.05-2.34,2.34-2.34s2.34,1.05,2.34,2.34Zm44.41,154.11l-10.87-9.89s-.09-.07-.14-.1v-144.55c0-1.29-1.05-2.34-2.34-2.34s-2.34,1.05-2.34,2.34v145.87c0,.74.35,1.39.88,1.82.13.26.31.5.53.71l10.87,9.89c1.03.94,2.63.86,3.57-.17s.86-2.63-.17-3.57Z"/>
+      <path id="blue_body" class="blue_body" d="m148.95,102.35v-13.56c0-36.35-29.47-65.82-65.82-65.82h-1.52c-36,0-65.18,29.18-65.18,65.18v13.67c0,22.78,14.82,42.08,35.33,48.83-11.83,7.14-20.14,19.63-21.45,34.3l-6.78,75.81c-3,33.56,23.44,62.47,57.13,62.47h5.56c33.7,0,60.14-28.91,57.14-62.48l-6.86-76.77c-1.29-14.48-9.57-26.78-21.32-33.71,19.68-7.02,33.77-25.82,33.77-47.91Z"/>
+      <path id="blue_face" d="m43.74,92.42h-.09c-2.18,0-3.96-1.77-3.96-3.96v-6c0-2.18,1.77-3.96,3.96-3.96h.09c2.18,0,3.96,1.77,3.96,3.96v6c0,2.18-1.77,3.96-3.96,3.96Zm79.92-4v-5.91c0-2.21-1.79-4-4-4h-.09c-2.21,0-4,1.79-4,4v5.91c0,2.21,1.79,4,4,4h.09c2.21,0,4-1.79,4-4Zm-32.8,20l6.44-6.14-6.55-6.25c-3.62-3.45-9.43-3.5-12.99-.11l-1.07,1.02c-2.96,2.82-2.92,7.45.09,10.32l1.09,1.04c3.62,3.45,9.43,3.5,12.99.11Z"/>
+      <path id="blue_head-feathers" class="blue_head-feather" d="m94.95,1.79c-1.51-1.95-4.39-2.37-6.44-.93-3.13,2.2-5.19,5.27-6.09,8.59-3.58-4.67-9.36-7.72-15.89-7.72-3.09,0-5.59,2.39-5.59,5.33,0,10.38,8.82,18.79,19.7,18.79h5.59v-1.83l1.57,2.03,3.71-2.61c7.22-5.08,8.76-14.78,3.44-21.66Z"/>
+    </g>
+</svg>

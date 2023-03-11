@@ -11,18 +11,13 @@
         <link href="css/main.css" rel="stylesheet">
     </head>
     <body>
-        <header></header>
-        <main class="background container grid">
-            <!-- DROP ZONES -->
+        <header>
 
-            <!-- <section id="dropZone" class="gridCol gridRow">
-                <div class="dropZone col2 row2" id="dropZone1">Drop Zone1</div>
-                <div class="dropZone col2 row3" id="dropZone2">Drop Zone2</div>
-                <div class="dropZone col2 row4" id="dropZone3">Drop Zone3</div>
-                <div class="dropZone col6 row4" id="dropZone4">Drop Zone4</div>
-                <div class="dropZone col8 row4" id="dropZone5">Drop Zone5</div>
-                <div class="dropZone col9 row4" id="dropZone6">Drop Zone6</div>
-            </section> -->
+        </header>
+        <main class="background container">
+            <div id="tree"></div>
+            <section class="grid">
+            <!-- DROP ZONES -->
 
             <div class="dropZone col2 row2" id="dropZone1">Drop Zone1</div>
             <div class="dropZone col2 row3" id="dropZone2">Drop Zone2</div>
@@ -30,16 +25,23 @@
             <div class="dropZone col6 row4" id="dropZone4">Drop Zone4</div>
             <div class="dropZone col8 row4" id="dropZone5">Drop Zone5</div>
             <div class="dropZone col9 row4" id="dropZone6">Drop Zone6</div>
-            
+                
+
             <section class="panel">
-                <div id="characterSlot" class="col1 scroller">
-                    <div class="characterHold">CHAR1</div>
-                    <div class="characterHold">CHAR2</div>
-                    <div class="characterHold">CHAR3</div>
-                    <div class="characterHold">CHAR4</div>
-                    <div class="characterHold">CHAR5</div>
-                    <div class="characterHold">CHAR6</div>
+                <div id="characterCon" class="col1">
+                        <button id="up" class="scrollIcon"><i class="fa-solid fa-caret-up"></i></button>
+                    <div id="scroller">
+                        <div class="characterHold"><img src="images/blue-bird-front.svg" alt="blue-bird">blue bird</div>
+                        <div class="characterHold"><img src="images/frog-front.svg" alt="frog">frog</div>
+                        <div class="characterHold"><img src="images/red-bird-front.svg" alt="red-bird">red bird</div>
+                        <div class="characterHold"><img src="images/sm_red-bird-front.svg" alt="sm_red-bird">small red bird</div>
+                        <div class="characterHold"><img src="images/squirrel-front.svg" alt="squirrel">squirrel</div>
+                        <div class="characterHold"><img src="images/toad-front.svg" alt="toad">toad</div>
+                    </div>                    
+                        <button id="down" class="scrollIcon"><i class="fa-solid fa-caret-down"></i></button>                    
+
                 </div>
+                
                 <div id="controls" class="col2">
                     <button id="playButton"><i class="fa-solid fa-play"></i></button>
                     <button id="pauseButton"><i class="fa-solid fa-pause"></i></button>
@@ -48,6 +50,7 @@
                     <input id="volumeControl" type="range" min="0" max="100" step="1"><i class="fa-regular fa-volume"></i></input>            
                 </div>
             </section>
+        </section>
         </main>
         <footer></footer>
         <h1 class="hidden">Music Mixer</h1>

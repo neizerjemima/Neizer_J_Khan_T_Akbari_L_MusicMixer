@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="red-bird_front" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 166.4 462.1">
+  <defs>
+    <style>
+      .red-lw-feather3 {
+        fill: url(#bird-grad-6);
+      }
+
+      .red-lw-feather2 {
+        fill: url(#bird-grad-5);
+      }
+
+      .red-solids {
+        fill: #c1272d;
+      }
+
+      .red-lw-feather1 {
+        fill: url(#bird-grad-4);
+      }
+
+      .red-rw-feather3 {
+        fill: url(#bird-grad-3);
+      }
+
+      .red-rw-feather2 {
+        fill: url(#bird-grad-2);
+      }
+
+      .red-rw-feather1 {
+        fill: url(#bird-grad);
+      }
+
+      #eyebrows { opacity: 0; }
+
+      #red-bird_front:hover #eyebrows { opacity: 1; fill:black; position: absolute; transition: ease-in-out .2s; }
+
+    </style>
+    <script>
+        const redBirdFront = document.querySelector('#red-bird_front');
+
+        function logBirdyId() {
+          console.log('Angry Bird');
+        }      
+
+        redBirdFront.addEventListener('click', logBirdyId);
+    </script>
+    <linearGradient id="bird-grad" x1="196.07" y1="278.04" x2="195.71" y2="303.43" gradientTransform="translate(-67.81 -38.33) rotate(-2.51)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7e1a1d"/>
+      <stop offset="1" stop-color="#c1272d"/>
+    </linearGradient>
+    <linearGradient id="bird-grad-2" data-name="bird-grad" x1="73.87" y1="206.73" x2="73.49" y2="232.19" gradientTransform="translate(206.67 518.75) rotate(-180)" xlink:href="#bird-grad"/>
+    <linearGradient id="bird-grad-3" data-name="bird-grad" x1="325.07" y1="394.64" x2="324.72" y2="419.59" gradientTransform="translate(-256.34 -93.79) rotate(-11.44)" xlink:href="#bird-grad"/>
+    <linearGradient id="bird-grad-4" data-name="bird-grad" x1="-1251.45" y1="167.87" x2="-1251.81" y2="193.26" gradientTransform="translate(-1213.23 -2.76) rotate(-176.91) scale(1 -1)" xlink:href="#bird-grad"/>
+    <linearGradient id="bird-grad-5" data-name="bird-grad" x1="-1375.88" y1="282.14" x2="-1376.26" y2="307.61" gradientTransform="translate(-1342.45 -38.63) rotate(-180) scale(1 -1)" xlink:href="#bird-grad"/>
+    <linearGradient id="bird-grad-6" data-name="bird-grad" x1="-1087.83" y1="61.25" x2="-1088.18" y2="86.19" gradientTransform="translate(-1024.15 -56.3) rotate(-167.98) scale(1 -1)" xlink:href="#bird-grad"/>
+  </defs>
+  <g id="redbird-front">
+    <g id="red-wings">
+      <g id="red-left-wing">
+        <path class="red-rw-feather1" d="m133.57,379.32h0c9.43-1.01,17.06-13.17,17.04-27.18l-.23-153.13c-.01-9.34-5.13-16.37-11.42-15.7h0c-3.14.34-5.68,4.39-5.67,9.05l.29,186.96Z"/>
+        <path class="red-rw-feather2" d="m141.75,178.82h0v190.63c0,3.12-2.54,5.66-5.66,5.66h0c-6.26,0-11.34-5.08-11.34-11.34v-167.95c0-9.38,7.62-17,17-17Z" transform="translate(242.75 564.14) rotate(-175.18)"/>
+        <path class="red-rw-feather3" d="m152.01,374.54h0c9.31-3.17,15.66-16.82,14.17-30.5l-16.23-149.57c-.99-9.12-6.83-14.81-13.04-12.7h0c-3.1,1.05-5.21,5.6-4.72,10.15l19.81,182.61Z"/>
+      </g>
+      <g id="red-left-wing">
+        <path class="red-lw-feather1" d="m32.5,380.92h0c-9.42-1.1-16.92-13.35-16.76-27.35l1.79-153.12c.11-9.34,5.29-16.32,11.57-15.58h0c3.14.37,5.63,4.44,5.58,9.11l-2.19,186.95Z"/>
+        <path class="red-lw-feather2" d="m36.71,180.43h0c3.12,0,5.66,2.54,5.66,5.66v190.63h0c-9.38,0-17-7.62-17-17v-167.95c0-6.26,5.08-11.34,11.34-11.34Z" transform="translate(-20.49 3.26) rotate(-4.24)"/>
+        <path class="red-lw-feather3" d="m14.12,375.96h0c-9.28-3.26-15.49-16.98-13.86-30.64l17.75-149.4c1.08-9.11,6.98-14.74,13.17-12.56h0c3.09,1.09,5.16,5.65,4.62,10.2l-21.67,182.4Z"/>
+      </g>
+    </g>
+    <path id="red-legs" d="m70.01,303.59v145.87c0,.33-.07.65-.2.94-.17.99-.93,1.83-1.97,2.05l-14.39,2.98c-1.37.28-2.7-.6-2.99-1.96-.28-1.37.6-2.7,1.96-2.99l12.91-2.67v-144.21c0-1.29,1.05-2.34,2.34-2.34s2.34,1.05,2.34,2.34Zm44.41,154.11l-10.87-9.89s-.09-.07-.14-.1v-144.55c0-1.29-1.05-2.34-2.34-2.34s-2.34,1.05-2.34,2.34v145.87c0,.74.35,1.39.88,1.82.13.26.31.5.53.71l10.87,9.89c1.03.94,2.63.86,3.57-.17s.86-2.63-.17-3.57Z"/>
+    <path id="red-body" class="red-solids" d="m149.53,102.35v-13.56c0-36.35-29.47-65.82-65.82-65.82h-1.52c-36,0-65.18,29.18-65.18,65.18v13.67c0,22.78,14.82,42.08,35.33,48.83-11.83,7.14-20.14,19.63-21.45,34.3l-6.78,75.81c-3,33.56,23.44,62.47,57.13,62.47h5.56c33.7,0,60.14-28.91,57.14-62.48l-6.86-76.77c-1.29-14.48-9.57-26.78-21.32-33.71,19.68-7.02,33.77-25.82,33.77-47.91Z"/>
+    <g>
+      <path id="face" d="m48.28,82.47v6c0,2.18-1.77,3.96-3.96,3.96h-.09c-2.18,0-3.96-1.77-3.96-3.96v-6c0-2.18,1.77-3.96,3.96-3.96h.09c2.18,0,3.96,1.77,3.96,3.96Zm71.96-3.96h-.09c-2.21,0-4,1.79-4,4v5.91c0,2.21,1.79,4,4,4h.09c2.21,0,4-1.79,4-4v-5.91c0-2.21-1.79-4-4-4Zm-41.89,17.42l-1.07,1.02c-2.96,2.83-2.96,7.41,0,10.23l1.07,1.02c3.56,3.39,9.32,3.39,12.88,0l6.44-6.14-6.44-6.14c-3.56-3.39-9.32-3.39-12.88,0Z"/>
+      <path id="eyebrows" d="m137.71,73.31l-31.21,15.85-2.96-5.83c-2.87-5.64-.61-12.54,5.03-15.41l20.99-10.66,8.15,16.05Zm-111.01.83l31.21,15.85,2.96-5.83c2.87-5.64.61-12.54-5.03-15.41l-20.99-10.66-8.15,16.05Z"/>
+    </g>
+    <path id="red-head-feathers" class="red-solids" d="m95.53,1.79c-1.51-1.95-4.39-2.37-6.44-.93-3.13,2.2-5.19,5.27-6.09,8.59-3.58-4.67-9.36-7.72-15.89-7.72h0c-3.09,0-5.59,2.39-5.59,5.33,0,10.38,8.82,18.79,19.7,18.79h5.59v-1.83l1.57,2.03,3.71-2.61c7.22-5.08,8.76-14.78,3.44-21.66Z"/>
+  </g>
+</svg>
