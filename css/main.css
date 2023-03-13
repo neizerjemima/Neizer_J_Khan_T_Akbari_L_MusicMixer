@@ -41,6 +41,16 @@ body {
 .row4 { grid-row: 4/5;}
 .row5 { grid-row: 5/6;}
 
+.drop-board {
+    grid-column: 1/10;
+    display: grid;
+    grid-template-columns:  repeat(8, 127px);
+    column-gap: 20px ;
+    /* padding: 0 88px; */
+    grid-template-rows: repeat(5, 160px) ;
+    row-gap: 70px;
+}
+
 .dropZone {
     background-color: rgba(240, 248, 255, 0.498);
     text-align: center;
