@@ -1,4 +1,5 @@
 
+@charset "UTF-8";
 .hidden { display: none;}
 
 body {
@@ -167,4 +168,18 @@ img.small {
     height: 160px;
 }
 
+/* .anim {
+	width: 200px;
+	height: 334px;
+	display: block;	
+	background: transparent url(../images/sm-red_anim.png) 0 0 no-repeat;
+	margin: 5px auto;
+	animation: bird 1.5s steps(9)infinite;
+}
 
+
+@keyframes bird {
+	0% {background-position: 0 0;}
+	100% {background-position: 0 -3000px;}
+}
+ */
