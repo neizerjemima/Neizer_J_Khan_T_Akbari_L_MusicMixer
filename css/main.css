@@ -161,3 +161,8 @@ button {
     background:none;
     color: #603814;
 }
+/*This is to size the image when they are dropped in the drop zone*/
+img.small {
+    width: 127px;
+    height: 160px;
+}

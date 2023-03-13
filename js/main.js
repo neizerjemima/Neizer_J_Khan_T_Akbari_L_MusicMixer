@@ -23,6 +23,7 @@ function handleDrop(e) {
     if (this.children.length > 0) {
         return;
     }
+    draggedPiece.classList.add('small');
     this.appendChild(draggedPiece);
 }
 
