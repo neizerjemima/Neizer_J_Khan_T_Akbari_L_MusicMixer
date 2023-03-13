@@ -25,6 +25,7 @@ function handleDrop(e) {
         existingPiece.classList.remove('small');
         piecesBoard.appendChild(existingPiece);
     }
+    
     draggedPiece.style.width = "127px"
     draggedPiece.style.height = "160px"
     draggedPiece.classList.add('small');
