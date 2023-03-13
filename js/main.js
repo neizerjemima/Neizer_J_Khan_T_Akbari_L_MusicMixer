@@ -21,8 +21,12 @@ function handleDrop(e) {
     e.preventDefault();
     console.log('dropped a birdie');
     if (this.children.length > 0) {
-        return;
+        let existingPiece = this.children[0];
+        existingPiece.classList.remove('small');
+        piecesBoard.appendChild(existingPiece);
     }
+    draggedPiece.style.width = "127px"
+    draggedPiece.style.height = "160px"
     draggedPiece.classList.add('small');
     this.appendChild(draggedPiece);
 }
