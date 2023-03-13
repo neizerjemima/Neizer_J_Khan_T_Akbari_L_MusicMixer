@@ -47,7 +47,10 @@ body {
     width: 127px;
     height: 160px;
     border: 1px dotted gray;
+    float: left;
+	position: relative;
 }
+
 
 .background {
     background: url("../images/mixer_background.jpg") no-repeat;
@@ -125,6 +128,7 @@ body {
     justify-content: center;
     scroll-snap-align: start;
     scroll-margin: 20px;
+    color: #fff;
 }
 
 .characterHold img {
