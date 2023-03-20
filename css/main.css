@@ -169,20 +169,4 @@ img.small {
     height: 160px;
 }
 
-/* animation */
 
-/* .toad-anim {
-    width: 200px;
-    height: 334px;
-    display: block;
-    background: transparent url(../images/toad-anim.png) 0 0 no-repeat;
-    margin: 5px auto;
-    animation: toad 4s steps(18)infinite;
-}
-
-
-
-@keyframes toad {
-    0% {background-position: 0 0;}
-    100% {background-position: 0 -6012px;}
-} */
