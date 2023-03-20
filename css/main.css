@@ -49,7 +49,7 @@ body {
     column-gap: 20px ;
     /* padding: 0 88px; */
     grid-template-rows: repeat(5, 160px) ;
-    row-gap: 70px;
+    row-gap: 70px;    
 }
 
 .dropZone {
@@ -60,7 +60,11 @@ body {
     border: 1px dotted rgba(128, 128, 128, 0.522);
     float: left;
 	position: relative;
-    border-radius: 100px;
+    border-radius: 100px 100px 0 0;
+    margin-top: -15px;
+    min-height: 153px;
+    height: fit-content;
+    padding: 10px 0 0 0;
 }
 
 
