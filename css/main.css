@@ -171,7 +171,7 @@ img.small {
 
 /* animation */
 
-.toad-anim {
+/* .toad-anim {
     width: 200px;
     height: 334px;
     display: block;
@@ -185,4 +185,4 @@ img.small {
 @keyframes toad {
     0% {background-position: 0 0;}
     100% {background-position: 0 -6012px;}
-}
+} */
