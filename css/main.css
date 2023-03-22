@@ -134,17 +134,16 @@ body {
 
 .characterHold {
     width: 127px;
-    background-color: #be936617;
-    /* text-align: center; */
+    /* background-color: #be936617;
     padding: 30px 0;
-    margin: 50px 0;
+    margin: 50px 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     scroll-snap-align: start;
     scroll-margin: 20px;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .characterHold img {
@@ -174,7 +173,39 @@ img.small {
 }
 
 /* animation */
-.toad-anim {
+
+.characterHold img.anim {display: none;}
+
+#frog-anim {	
+    width: 300px;
+	height: 500px;
+	display: block;	
+	background: transparent url(../images/frog-anim.png) 0 0 no-repeat;
+	margin: 5px auto;
+	animation: smRed 6s steps(28)infinite;
+}
+
+@keyframes smRed {
+	0% {background-position: 0 0;}
+	100% {background-position: 0 -14000px;}
+	
+}
+
+#smRed-anim {
+    width: 200px;
+	height: 320px;
+	display: block;	
+	background: transparent url(../images/sm-red_anim.png) 0 0 no-repeat;
+	margin: 5px auto;
+	animation: frog 2s steps(9)infinite;
+}
+
+@keyframes frog {
+	0% {background-position: 0 0;}
+	100% {background-position: 0 -3006px;}
+}
+
+#toad-anim {
     width: 200px;
     height: 334px;
     display: block;
