@@ -2,7 +2,7 @@ let Birds = document.querySelectorAll(".character-pieces img"),
     birdBoard = document.querySelector(".drop-board"),
     dropzones = document.querySelectorAll(".dropZone"),
     piecesBoard = document.querySelector(".character-pieces"),
-    reloadPage = document.querySelector("#resetPage"),
+
     draggedPiece; 
 
 
@@ -33,12 +33,6 @@ function handleDrop(e) {
     this.appendChild(draggedPiece);
 }
 
-function resetPage() {
-    document.location.reload()
-}
-
-
 Birds.forEach(piece => piece.addEventListener('dragstart', handleStartDrag));
 dropzones.forEach(zone =>zone.addEventListener("dragover", handleDragOver));
 dropzones.forEach(zone => zone.addEventListener("drop", handleDrop));
-reloadPage.addEventListener("click", resetPage);
