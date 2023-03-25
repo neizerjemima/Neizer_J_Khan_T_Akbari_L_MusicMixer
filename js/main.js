@@ -116,3 +116,39 @@ reloadPage.addEventListener("click", resetPage);
 volSlider.addEventListener('change', setVolume)
 
 // anima.forEach. addEventListener('drop', toad);
+
+
+// volume button 
+function clicked() {
+    if(volumeControl==1){
+        document.getElementById("volumeControl").style.display="inline"
+        return volumeControl=0;
+    }else{
+        document.getElementById("volumeControl").style.display="none"
+        return volumeControl=1;
+    }
+}
+
+// volume number
+function rangeSlider(value){
+    document.getElementById('rangeValue').innerHTML = value;
+}
+
+// scroll up and down
+
+const characterPieces = [...document.querySelectorAll('.character-pieces')];
+const upBtn = [...document.querySelectorAll('.up-btn')];
+const downBtn = [...document.querySelectorAll('.down-btn')];
+
+characterPieces.forEach((item, i) => {
+    let characterDimensions = item.getBoundingClientRect();
+    let characterHeight = characterDimensions.height;
+
+    upBtn[i].addEventListener('click', () => {
+        item.scrollTo(0, 0) += characterHeight;
+    })
+
+    downBtn[i].addEventListener('click', () => {
+        item.scrollTop += characterHeight;
+    })
+})
