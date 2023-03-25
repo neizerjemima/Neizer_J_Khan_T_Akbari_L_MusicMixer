@@ -7,7 +7,14 @@ let characters = document.querySelectorAll(".characterHold"),
     pauseButton = document.querySelector("#pauseButton"),
     rewindButton = document.querySelector("#rewindButton"),
     reloadPage = document.querySelector("#resetPage"),
+    scroll = document.querySelector("#scroller"),
     volSlider = document;
+
+const characterPieces = [...document.querySelectorAll('.character-pieces')],
+    upBtn = [...document.querySelectorAll('.up-btn')],
+    downBtn = [...document.querySelectorAll('.down-btn')];
+
+
     // child = document.querySelectorAll(".img");
 
     // anima = document.querySelector(".characterHold"),
@@ -104,19 +111,10 @@ function setVolume() {
 }
 
 
-
-// child.forEach(piece => piece.addEventListener("drop", hideImage));
-characters.forEach(piece => piece.addEventListener('dragstart', handleStartDrag));
-dropZone.forEach(zone =>zone.addEventListener("dragover", handleDragOver));
-dropZone.forEach(zone => zone.addEventListener("drop", handleDrop));
-playButton.addEventListener("drop", playAudio);
-pauseButton.addEventListener("click", pauseAudio);
-rewindButton.addEventListener("click", rewindAudio);
-reloadPage.addEventListener("click", resetPage);
-volSlider.addEventListener('change', setVolume)
-
-// anima.forEach. addEventListener('drop', toad);
-
+// volume number
+function rangeSlider(value){
+    document.getElementById('rangeValue').innerHTML = value;
+}
 
 // volume button 
 function clicked() {
@@ -129,17 +127,17 @@ function clicked() {
     }
 }
 
-// volume number
-function rangeSlider(value){
-    document.getElementById('rangeValue').innerHTML = value;
-}
 
-// scroll up and down
 
-const characterPieces = [...document.querySelectorAll('.character-pieces')];
-const upBtn = [...document.querySelectorAll('.up-btn')];
-const downBtn = [...document.querySelectorAll('.down-btn')];
-
+// child.forEach(piece => piece.addEventListener("drop", hideImage));
+characters.forEach(piece => piece.addEventListener('dragstart', handleStartDrag));
+dropZone.forEach(zone =>zone.addEventListener("dragover", handleDragOver));
+dropZone.forEach(zone => zone.addEventListener("drop", handleDrop));
+playButton.addEventListener("drop", playAudio);
+pauseButton.addEventListener("click", pauseAudio);
+rewindButton.addEventListener("click", rewindAudio);
+reloadPage.addEventListener("click", resetPage);
+volSlider.addEventListener('change', setVolume)
 characterPieces.forEach((item, i) => {
     let characterDimensions = item.getBoundingClientRect();
     let characterHeight = characterDimensions.height;
@@ -152,3 +150,7 @@ characterPieces.forEach((item, i) => {
         item.scrollTop += characterHeight;
     })
 })
+// anima.forEach. addEventListener('drop', toad);
+
+// scroll up and down
+
