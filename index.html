@@ -28,7 +28,7 @@
                 <!-- Draggables-->
                 <section class="panel">
                     <div id="characterCon" class="col1 ">
-                            <button id="up" class="scrollIcon"><i class="fa-solid fa-caret-up"></i></button>
+                            <button id="up" class="up-btn" value="scroller"><i class="fa-solid fa-caret-up"></i></button>
                         <div class="character-pieces" id="scroller">
                             <div class="characterHold" id="blue"><img data-trackref="Sound_1"  src="images/blue-bird-front.svg" class="small img" alt="blue-bird"></div>
                             <div class="characterHold" id="frog"><img data-trackref="Sound_2" src="images/frog-front.svg" class="small img" alt="frog"></div>
@@ -37,7 +37,7 @@
                             <div class="characterHold" id="squirrel"><img data-trackref="Sound_5" src="images/squirrel-front.svg" class="small img" alt="squirrel"></div>
                             <div class="characterHold" id="toad"><img data-trackref="Sound_6" src="images/toad-front.svg" class="small img" alt="toad"></div>
                         </div>                    
-                            <button id="down" class="scrollIcon"><i class="fa-solid fa-caret-down"></i></button>                    
+                            <button id="down" class="down-btn" value="scroller"><i class="fa-solid fa-caret-down"></i></button>                    
 
                     </div>
                     
@@ -46,9 +46,16 @@
                         <button id="pauseButton"><i class="fa-solid fa-pause"></i></button>
                         <button id="rewindButton"><i class="fa-sharp fa-solid fa-backward"></i></button>
                         <button id="resetPage"><i class="fa-solid fa-arrows-rotate"></i></button>
+                        <div class="mike-icon" id="volumeButton" value="HIDE/SHOW" onclick="clicked()"><img src="images/volume-icon.svg"></div>
+                        <div class="box" id="volumeControl">
+                            <div class="slider">
+                                <input type="range" class="range" value="0" min="0" max="100" anmousemove="rangeSlider(this.value)">
+                            </div>
+                            <span class="value" id="rangeValue">100</span>
+                        </div>
 
                         <!-- <button id="volumeButton"><i class="fa-regular fa-volume"></i></button> -->
-                        <input id="volumeControl" type="range" min="0" max="100" step="1"><i class="fa-regular fa-volume"></i>          
+                        <!-- <input id="volumeControl" type="range" min="0" max="100" step="1"><i class="fa-regular fa-volume"></i>           -->
                     </div>
 
                     <audio src="A_udio/Sound_1.mp3"></audio>
