@@ -1,16 +1,19 @@
-let Birds = document.querySelectorAll(".character-pieces div"),
-    birdBoard = document.querySelector(".drop-board"),
-    dropzones = document.querySelectorAll(".dropZone"),
-    piecesBoard = document.querySelector(".character-pieces"),
+let characters = document.querySelectorAll(".characterHold"), 
+    gameBoard = document.querySelector(".drop-board"),
+    dropZone = document.querySelectorAll(".dropZone"),
+    characterBoard = document.querySelector(".character-pieces"),
     theAudioEl = document.querySelector("A_udio"),
     playButton = document.querySelector("#playButton"),
     pauseButton = document.querySelector("#pauseButton"),
     rewindButton = document.querySelector("#rewindButton"),
     reloadPage = document.querySelector("#resetPage"),
-    volSlider = document,
-    anima = document.querySelector(".characterHold"),
-    draggedPiece; 
+    volSlider = document;
+    // child = document.querySelectorAll(".img");
 
+    // anima = document.querySelector(".characterHold"),
+    // draggedPiece; 
+
+this
 
 function handleStartDrag() {
     console.log('started dragging this piece:', this);
@@ -30,28 +33,50 @@ function resetPage() {
 
 
 function handleDrop(e) {
+
     e.preventDefault();
     console.log('dropped a birdie');
     if (this.children.length > 0) {
         let existingPiece = this.children[0];
         existingPiece.classList.remove('small');
-        piecesBoard.appendChild(existingPiece);
+        characterBoard.appendChild(existingPiece);
+       
+    }
+    draggedPiece.style.width = "127px";
+    draggedPiece.style.height = "222.4px";
+    draggedPiece.classList.add('small');
+
+    this.appendChild(draggedPiece);
+
+
+    var frog = document.querySelector(".dropZone div#frog"),
+    smRed = document.querySelector(".dropZone div#smRed"),
+    toad = document.querySelector(".dropZone div#toad");
+    
+    if (frog) {    
+    frog.classList.add('frog');
+
+    let childFrog = document.getElementById("frog").children[0];
+ 	childFrog.className = `small invisible`;
     }
 
-     // let child = document.querySelectorAll("characterHold img");
+    if (smRed) {
+     smRed.classList.add('smRed')    
+    let childSmRed = document.getElementById("smRed").children[0];
+    childSmRed.className = `small invisible`;
+    }
+   
+    if (toad)
+    toad.classList.add('toad');
 
-    // child.classList.add('anim');
+    let childToad = document.getElementById("toad").children[0];
+	childToad.className = `small invisible`;
 
-    
-    draggedPiece.style.width = "127px"
-    draggedPiece.style.height = "160px"
-    draggedPiece.classList.add('small');
-    this.appendChild(draggedPiece);
+    // debugger;
+
 }
 
-// function removeImage(e) {
 
-// }
 
 
 
@@ -80,10 +105,10 @@ function setVolume() {
 
 
 
-// child.forEach(piece => piece.addEventListener("drop", removeImage));
-Birds.forEach(piece => piece.addEventListener('dragstart', handleStartDrag));
-dropzones.forEach(zone =>zone.addEventListener("dragover", handleDragOver));
-dropzones.forEach(zone => zone.addEventListener("drop", handleDrop));
+// child.forEach(piece => piece.addEventListener("drop", hideImage));
+characters.forEach(piece => piece.addEventListener('dragstart', handleStartDrag));
+dropZone.forEach(zone =>zone.addEventListener("dragover", handleDragOver));
+dropZone.forEach(zone => zone.addEventListener("drop", handleDrop));
 playButton.addEventListener("drop", playAudio);
 pauseButton.addEventListener("click", pauseAudio);
 rewindButton.addEventListener("click", rewindAudio);

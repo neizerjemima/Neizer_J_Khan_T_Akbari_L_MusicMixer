@@ -56,13 +56,12 @@ body {
     /* background-color: rgba(240, 248, 255, 0.498); */
     text-align: center;
     width: 127px;
-    height: 160px;
     border: 1px dotted rgba(128, 128, 128, 0.522);
     float: left;
 	position: relative;
     border-radius: 100px 100px 0 0;
-    margin-top: -15px;
-    min-height: 153px;
+    margin-top: -55px;
+    min-height: 200px;
     height: fit-content;
     padding: 10px 0 0 0;
 }
@@ -135,8 +134,8 @@ body {
 .characterHold {
     width: 127px;
     /* background-color: #be936617;
-    padding: 30px 0;
-    margin: 50px 0; */
+    padding: 30px 0;*/
+    margin: 50px 0; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,54 +166,52 @@ button {
     color: #603814;
 }
 /*This is to size the image when they are dropped in the drop zone*/
-img.small {
+.small {
     width: 127px;
     height: 160px;
 }
 
 /* animation */
 
-.characterHold img.anim {display: none;}
+.invisible {visibility: hidden;}
 
-#frog-anim {	
-    width: 300px;
-	height: 500px;
+.frog {	
+    width: 120px;
+    height: 200px;
 	display: block;	
 	background: transparent url(../images/frog-anim.png) 0 0 no-repeat;
-	margin: 5px auto;
-	animation: smRed 6s steps(28)infinite;
-}
-
-@keyframes smRed {
-	0% {background-position: 0 0;}
-	100% {background-position: 0 -14000px;}
-	
-}
-
-#smRed-anim {
-    width: 200px;
-	height: 320px;
-	display: block;	
-	background: transparent url(../images/sm-red_anim.png) 0 0 no-repeat;
-	margin: 5px auto;
-	animation: frog 2s steps(9)infinite;
+	margin: 0 auto;
+	animation: frog 5s steps(28)infinite;
 }
 
 @keyframes frog {
 	0% {background-position: 0 0;}
-	100% {background-position: 0 -3006px;}
+	100% {background-position: 0 -5600px;}
+	
 }
 
-#toad-anim {
-    width: 200px;
-    height: 334px;
+.smRed {
+	display: block;	
+	background: transparent url(../images/sm-red_anim.png) 0 0 no-repeat;
+    /* background-size: cover; */
+	margin: 5px auto;
+	animation: smRed 2s steps(9)infinite;
+}
+
+@keyframes smRed {
+	0% {background-position: 0 0;}
+	100% {background-position: 0 -1535px;}
+}
+
+.toad {
     display: block;
     background: transparent url(../images/toad-anim.png) 0 0 no-repeat;
+    /* background-size: 100px; */
     margin: 5px auto;
     animation: toad 4s steps(18)infinite;
 }
 
 @keyframes toad {
     0% {background-position: 0 0;}
-    100% {background-position: 0 -6012px;}
+    100% {background-position: 0 -2982px;}
 }
