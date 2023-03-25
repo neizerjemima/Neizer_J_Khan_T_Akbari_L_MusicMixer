@@ -49,8 +49,7 @@ function handleDrop(e) {
         characterBoard.appendChild(existingPiece);
        
     }
-    draggedPiece.style.width = "127px";
-    draggedPiece.style.height = "222.4px";
+    
     draggedPiece.classList.add('small');
 
     this.appendChild(draggedPiece);
@@ -65,20 +64,29 @@ function handleDrop(e) {
 
     let childFrog = document.getElementById("frog").children[0];
  	childFrog.className = `small invisible`;
+
+     frog.style.width = "127px";
+     frog.style.height = "200px";
     }
 
     if (smRed) {
      smRed.classList.add('smRed')    
     let childSmRed = document.getElementById("smRed").children[0];
     childSmRed.className = `small invisible`;
+
+    smRed.style.width = "120px";
+    smRed.style.height = "130px";
     }
    
-    if (toad)
+    if (toad) {
     toad.classList.add('toad');
 
     let childToad = document.getElementById("toad").children[0];
 	childToad.className = `small invisible`;
 
+    toad.style.width = "120px";
+    toad.style.height = "140px";
+    }
     // debugger;
 
 }

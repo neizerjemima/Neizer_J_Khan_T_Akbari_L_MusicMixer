@@ -60,8 +60,8 @@ body {
     float: left;
 	position: relative;
     border-radius: 100px 100px 0 0;
-    margin-top: -55px;
-    min-height: 200px;
+    /* margin-top: -55px; */
+    min-height: 140px;
     height: fit-content;
     padding: 10px 0 0 0;
 }
@@ -136,6 +136,22 @@ body {
 } */
 
 
+.dropZone .characterHold.wee{
+    width: 127px;
+    display: flex;
+    margin: 22px 0; 
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.dropZone .characterHold.big{
+    width: 127px;
+    margin-top: -40px; 
+    justify-content: center;
+    padding: 0;
+}
+
 .characterHold {
     width: 127px;
     /* background-color: #be936617;
@@ -172,8 +188,7 @@ button {
 }
 /*This is to size the image when they are dropped in the drop zone*/
 .small {
-    width: 127px;
-    height: 160px;
+    height: 80px;
 }
 
 /* animation */
@@ -196,19 +211,24 @@ button {
 }
 
 .smRed {
+    width: 120px;
+    height: 80px;
 	display: block;	
 	background: transparent url(../images/sm-red_anim.png) 0 0 no-repeat;
     /* background-size: cover; */
-	margin: 5px auto;
+	margin-top: 5px;
+    margin-bottom:0;
 	animation: smRed 2s steps(9)infinite;
 }
 
 @keyframes smRed {
 	0% {background-position: 0 0;}
-	100% {background-position: 0 -1535px;}
+	100% {background-position: 0 -1201px;}
 }
 
 .toad {
+    width: 120px;
+    height: 80px;
     display: block;
     background: transparent url(../images/toad-anim.png) 0 0 no-repeat;
     /* background-size: 100px; */
@@ -218,7 +238,7 @@ button {
 
 @keyframes toad {
     0% {background-position: 0 0;}
-    100% {background-position: 0 -2982px;}
+    100% {background-position: 0 -2405px;}
 }
 
 
