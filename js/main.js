@@ -2,7 +2,8 @@ let characters = document.querySelectorAll(".characterHold"),
     gameBoard = document.querySelector(".drop-board"),
     dropZone = document.querySelectorAll(".dropZone"),
     characterBoard = document.querySelector(".character-pieces"),
-    theAudioEl = document.querySelector("A_udio"),
+    theAudioEl = document.querySelector("audio"),
+    character_Audio = document.querySelectorAll(".characterHold img"),
     playButton = document.querySelector("#playButton"),
     pauseButton = document.querySelector("#pauseButton"),
     rewindButton = document.querySelector("#rewindButton"),
@@ -95,12 +96,13 @@ function handleDrop(e) {
 
 
 
-function playAudio () {
-    let currentSrc = `A_udio/${this.dataset.trackref}.mp3`;
+function loadAudio() {
+    theAudioEl.src = `A_udio/${this.dataset.trackref}.mp3`;
+    console.log('playing', this);
+    theAudioEl.load();
 
-    theAudioListener.src = currentSrc;
-
-    theAudioEl.play();
+    playAudio();
+    
 }
 
 function playAudio() {theAudioEl.play(); }
@@ -141,7 +143,8 @@ function clicked() {
 characters.forEach(piece => piece.addEventListener('dragstart', handleStartDrag));
 dropZone.forEach(zone =>zone.addEventListener("dragover", handleDragOver));
 dropZone.forEach(zone => zone.addEventListener("drop", handleDrop));
-playButton.addEventListener("drop", playAudio);
+character_Audio.forEach(song => song.addEventListener("click", loadAudio));
+playButton.addEventListener("click", playAudio);
 pauseButton.addEventListener("click", pauseAudio);
 rewindButton.addEventListener("click", rewindAudio);
 reloadPage.addEventListener("click", resetPage);
