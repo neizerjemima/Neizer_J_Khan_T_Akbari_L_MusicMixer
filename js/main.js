@@ -3,13 +3,15 @@ let characters = document.querySelectorAll(".characterHold"),
     dropZone = document.querySelectorAll(".dropZone"),
     characterBoard = document.querySelector(".character-pieces"),
     theAudioEl = document.querySelector("audio"),
-    character_Audio = document.querySelectorAll(".characterHold img"),
+    character_Audio = document.querySelectorAll(".characterHold"),
     playButton = document.querySelector("#playButton"),
     pauseButton = document.querySelector("#pauseButton"),
     rewindButton = document.querySelector("#rewindButton"),
     reloadPage = document.querySelector("#resetPage"),
     scroll = document.querySelector("#scroller"),
-    volSlider = document;
+    volSlider = document,
+
+    draggedPiece;
 
 const characterPieces = [...document.querySelectorAll('.character-pieces')],
     upBtn = [...document.querySelectorAll('.up-btn')],
@@ -98,12 +100,13 @@ function handleDrop(e) {
 
 function loadAudio() {
     theAudioEl.src = `A_udio/${this.dataset.trackref}.mp3`;
-    console.log('playing', this);
+    console.log('playing music', this);
     theAudioEl.load();
 
     playAudio();
     
 }
+
 
 function playAudio() {theAudioEl.play(); }
 
