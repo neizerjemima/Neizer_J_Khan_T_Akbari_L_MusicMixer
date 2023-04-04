@@ -4,16 +4,20 @@
         <meta charset="UTF-8">
         <title>Music Mixer</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat" rel="stylesheet">
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat" rel="stylesheet"> -->
         <script src="https://kit.fontawesome.com/fe8842756b.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Inter:wght@300;500;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+        
         <link href="css/main.css" rel="stylesheet">
     </head>
     <body>
         <header class="header-con">
             <h1 class="hidden">Fun Forest</h1>
             <div id="logo" class="col2">
-                <img src="images/FUN.svg" alt="Logo">
+                <img src="images/MusicMixerLogo.svg" alt="Logo">
             </div>
             <nav id="main-nav">
                <ul>
@@ -69,12 +73,13 @@
                         <button id="pauseButton"><i class="fa-solid fa-pause"></i></button>
                         <button id="rewindButton"><i class="fa-sharp fa-solid fa-backward"></i></button>
                         <button id="resetPage"><i class="fa-solid fa-arrows-rotate"></i></button>
-                        <div class="mike-icon" id="volumeButton" value="HIDE/SHOW" onclick="clicked()"><img src="images/volume-icon.svg"></div>
+                        <div class="mike-icon" id="volumeButton" value="HIDE/SHOW" onclick="clicked()"></div>
+                        <!-- <div class="mike-icon" id="volumeButton" value="HIDE/SHOW" onclick="clicked()"><img src="images/volume-icon.svg"></div> -->
                         <div class="box" id="volumeControl">
                             <div class="slider">
                                 <input type="range" class="range" value="0" min="0" max="100" anmousemove="rangeSlider(this.value)">
                             </div>
-                            <span class="value" id="rangeValue">100</span>
+                            <!-- <span class="value" id="rangeValue">100</span> -->
                         </div>
 
                         <!-- <button id="volumeButton"><i class="fa-regular fa-volume"></i></button> -->
@@ -96,9 +101,9 @@
                 </div>
 
                 <div class="grid" id="extra-icons">
-                    <i class="fa-solid fa-download"></i>
-                    <i class="fa-solid fa-share"></i>
-                    <i class="fa-solid fa-music"></i>
+                    <i class="fa-solid fa-download" id="downloadIcon"></i>
+                    <i class="fa-solid fa-share" id="shareIcon"></i>
+                    <i class="fa-solid fa-music" id="musicIcon"></i>
                 </div>
             </section>
 
@@ -113,15 +118,6 @@
                         <li><a href="#">PRIVACY</a></li>
             </section>
 
-            <nav id="footer-nav2">
-                <ul>
-                    <li><a href="#">HELP</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">SOUNDS</a></li>
-                    <li><a href="#">APP</a></li>
-                </ul>
-            </nav>
-
             <div id="footer-icons">
                 <ul>
                     <i class="fa-brands fa-facebook"></i>
@@ -132,6 +128,15 @@
                     <i class="fa-brands fa-tumblr"></i>
                 </ul>
             </div>
+
+            <nav id="footer-nav2">
+                <ul>
+                    <li><a href="#">HELP</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">SOUNDS</a></li>
+                    <li><a href="#">APP</a></li>
+                </ul>
+            </nav>
                 
         </footer>
         <h1 class="hidden">Music Mixer</h1>

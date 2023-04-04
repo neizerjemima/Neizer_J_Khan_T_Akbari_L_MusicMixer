@@ -124,10 +124,10 @@ function setVolume() {
 }
 
 
-// volume number
-function rangeSlider(value){
-    document.getElementById('rangeValue').innerHTML = value;
-}
+// // volume number
+// function rangeSlider(value){
+//     document.getElementById('rangeValue').innerHTML = value;
+// }
 
 // volume button 
 function clicked() {
@@ -139,6 +139,11 @@ function clicked() {
         return volumeControl=1;
     }
 }
+
+// volumeControl.oninput = function (){
+//     audio.volume = volumeControl.value/100
+//     num.innerHTML= vol.value;
+// }
 
 
 
