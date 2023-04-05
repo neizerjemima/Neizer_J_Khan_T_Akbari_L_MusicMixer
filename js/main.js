@@ -132,7 +132,7 @@ function handleDrop(e) {
 
 
 function loadAudio() {
-    theAudioEl.src = `A_udio/${this.dataset.trackref}.mp3`;
+    theAudioEl.src = `A_udio/${this.dataset.trackref}.wav`;
     console.log('playing music', this);
     theAudioEl.load();
 
