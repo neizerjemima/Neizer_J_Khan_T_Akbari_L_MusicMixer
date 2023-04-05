@@ -227,6 +227,38 @@ button:hover {
 	
 }
 
+.red {
+    width: 120px;
+    height: 200px;
+	display: block;	
+	background: transparent url(../images/red-bird_anim.png) 0 0 no-repeat;
+	margin: 0 auto;
+	animation: redBird 7s steps(22)infinite;
+}
+
+@keyframes redBird {
+	0% {background-position: 0 0;}
+	100% {background-position: 0 -4400px;}
+	
+}
+
+
+.blue {
+    width: 120px;
+    height: 200px;
+	display: block;	
+	background: transparent url(../images/blue-bird_anim.png) 0 0 no-repeat;
+	margin: 0 auto;
+	animation: blueBird 4s steps(26)infinite;
+}
+
+@keyframes blueBird {
+	0% {background-position: 0 0;}
+	100% {background-position: 0 -5200px;}
+	
+}
+
+
 .smRed {
     width: 120px;
     height: 80px;
@@ -241,6 +273,22 @@ button:hover {
 @keyframes smRed {
 	0% {background-position: 0 0;}
 	100% {background-position: 0 -1201px;}
+}
+
+
+.squirrel {
+    width: 200px;
+    height: 200px;
+	display: block;	
+	background: transparent url(../images/squirrel_anim.png) 0 0 no-repeat;
+	margin: 0 auto;
+	animation: squirrel 2s steps(12)infinite;
+}
+
+@keyframes squirrel {
+	0% {background-position: 0 0;}
+	100% {background-position: 0 -2400px;}
+	
 }
 
 .toad {

@@ -58,10 +58,24 @@ function handleDrop(e) {
     this.appendChild(draggedPiece);
 
 
+    
     var frog = document.querySelector(".dropZone div#frog"),
+    blue = document.querySelector(".dropZone div#blue"),
+    red = document.querySelector(".dropZone div#red"),
     smRed = document.querySelector(".dropZone div#smRed"),
+    squirrel = document.querySelector(".dropZone div#squirrel"),
     toad = document.querySelector(".dropZone div#toad");
     
+    if (blue) {    
+        blue.classList.add('blue');
+    
+        let childBlue = document.getElementById("blue").children[0];
+         childBlue.className = `small invisible`;
+    
+         blue.style.width = "127px";
+         blue.style.height = "200px";
+        }
+
     if (frog) {    
     frog.classList.add('frog');
 
@@ -72,6 +86,16 @@ function handleDrop(e) {
      frog.style.height = "200px";
     }
 
+    if (red) {    
+        red.classList.add('red');
+    
+        let childRed = document.getElementById("red").children[0];
+         childRed.className = `small invisible`;
+    
+         red.style.width = "127px";
+         red.style.height = "200px";
+        }
+
     if (smRed) {
      smRed.classList.add('smRed')    
     let childSmRed = document.getElementById("smRed").children[0];
@@ -80,7 +104,16 @@ function handleDrop(e) {
     smRed.style.width = "120px";
     smRed.style.height = "130px";
     }
+
+    if (squirrel) {
+        squirrel.classList.add('squirrel')    
+       let childSquirrel = document.getElementById("squirrel").children[0];
+       childSquirrel.className = `small invisible`;
    
+       squirrel.style.width = "200px";
+       squirrel.style.height = "200px";
+       }
+      
     if (toad) {
     toad.classList.add('toad');
 
