@@ -1,9 +1,9 @@
-let characters = document.querySelectorAll(".characterHold"), 
+let characters = document.querySelectorAll(".characterHold, .small"), 
     gameBoard = document.querySelector(".drop-board"),
     dropZone = document.querySelectorAll(".dropZone"),
     characterBoard = document.querySelector(".character-pieces"),
     theAudioEl = document.querySelector("audio"),
-    character_Audio = document.querySelectorAll(".characterHold"),
+    character_Audio = document.querySelectorAll(".characterHold img"),
     playButton = document.querySelector("#playButton"),
     pauseButton = document.querySelector("#pauseButton"),
     rewindButton = document.querySelector("#rewindButton"),
@@ -11,7 +11,7 @@ let characters = document.querySelectorAll(".characterHold"),
     scroll = document.querySelector("#scroller"),
     volSlider = document,
 
-    draggedPiece;
+    draggedPiece = null;
 
 const characterPieces = [...document.querySelectorAll('.character-pieces')],
     upBtn = [...document.querySelectorAll('.up-btn')],
@@ -125,6 +125,17 @@ function handleDrop(e) {
     }
     // debugger;
 
+    theAudioEl.src = `A_udio/${this.dataset.trackref}.wav`;
+    console.log('playing music', this);
+    theAudioEl.load();
+
+    playAudio();
+
+    let newAudio = document.createElement("audio");
+	newAudio.src = `A_udio/${this.dataset.trackref}.wav`;
+	newAudio.load();
+	newAudio.play();
+
 }
 
 
@@ -136,8 +147,7 @@ function loadAudio() {
     console.log('playing music', this);
     theAudioEl.load();
 
-    playAudio();
-    
+    playAudio();  
 }
 
 
@@ -184,7 +194,7 @@ function clicked() {
 characters.forEach(piece => piece.addEventListener('dragstart', handleStartDrag));
 dropZone.forEach(zone =>zone.addEventListener("dragover", handleDragOver));
 dropZone.forEach(zone => zone.addEventListener("drop", handleDrop));
-character_Audio.forEach(song => song.addEventListener("click", loadAudio));
+character_Audio.forEach(song => song.addEventListener("drop", loadAudio));
 playButton.addEventListener("click", playAudio);
 pauseButton.addEventListener("click", pauseAudio);
 rewindButton.addEventListener("click", rewindAudio);
