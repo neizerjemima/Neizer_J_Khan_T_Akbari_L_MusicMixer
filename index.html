@@ -15,16 +15,15 @@
     </head>
     <body>
         <header class="header-con">
-            <h1 class="hidden">Fun Forest</h1>
+            <h1 class="hidden">The Singing Tree</h1>
             <div id="logo" class="col2">
                 <img src="images/MusicMixerLogo.svg" alt="Logo">
             </div>
             <nav id="main-nav">
                <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="#">APP</a></li>
+                <li><a id="howTo-Btn" href="#">HOW TO PLAY</a></li>
                 <li><a href="audio.html">SOUNDS</a></li>
-                <li><a href="#">SHOP</a></li>
                </ul>
             </nav>
 
@@ -36,13 +35,14 @@
                 
             </div>
             <section id="start-button">
-                <h2 id="fun"><a href="#">START FUN!</a></h2>
+                <h2 id="fun"><a href="#">DRAG n' DROP! <br> Music Mixer</a></h2>
             </section>
         </header>
 
         <main class="background container">
             <div id="tree"></div>
             <section class="grid">
+                <h2 class="hidden">Game Board</h2>
                 <!-- DROP ZONES -->
                 <div class="drop-board">
                     <div data-trackref="Sound_1" class="dropZone col2 row2"></div>
@@ -54,6 +54,7 @@
                 </div>
                 <!-- Draggables-->
                 <section class="panel">
+                    <h2 class="hidden">Characters and Controls</h2>
                     <div id="characterCon" class="col1 ">
                             <button id="up" class="up-btn" value="scroller"><i class="fa-solid fa-caret-up"></i></button>
                         <div class="character-pieces" id="scroller">
@@ -89,29 +90,37 @@
                     <audio id="audio" src="A_udio/Sound_1.mp3"></audio>
                 </section>
                 <!-- <div class="anim"></div> -->
+            <section class="row3" id="howToPlay">
+                <h2 class="hidden">how to window</h2>
+                <div class="howToPlay" id="extra">
+                    <button>x</button>
+                    <h2>
+                        Welcome to Singing Tree, a Drag n' Drop Mixer!
+                        <br>
+                        HOW TO PLAY
+                    </h2>                        
+                    <h3>
+                    <ul>
+                        <li>1. Scroll through the Critters on the right and drop them into the dotted zones</li>
+                        <li>2. Test them out by clicking the play button, 
+                            <br> &emsp; (you can also test their sounds by clicking the 'SOUNDS' tab above).
+                        </li>
+                        <li>3. Place as many characters into the treehouse and pond as yoy like!
+                            <br> &emsp; Mix & Match or Play them all at once!
+                        </li>
 
+                    </ul>
+                    </h3>
+                </div>
+            </section>
             </section>
             
-            <section>
-                <div class="grid" id="extra">
-                    <a href="#" class="download"><h2>DOWNLOAD APP</h2></a>
-                    
-                    <a href="#" class="share"><h2>SHARE</h2></a>
-                    <a href="#" class="sound"><h2>LISTEN TO SOUNDS</h2></a>
-                </div>
 
-                <div class="grid" id="extra-icons">
-                    <i class="fa-solid fa-download" id="downloadIcon"></i>
-                    <i class="fa-solid fa-share" id="shareIcon"></i>
-                    <i class="fa-solid fa-music" id="musicIcon"></i>
-                </div>
-            </section>
 
         </main>
         <footer class="footer-con">
-
-
             <section id="footer-nav1" >
+                <h2 class="hidden">Footer Nav</h2>
                         <li><a href="#">CREDITS</a></li>
                         <li><a href="#">LANGUAGE</a></li>
                         <li><a href="#">LEGAL</a></li>
@@ -138,12 +147,12 @@
                 </ul>
             </nav>
                 
-        </footer>
-        <h1 class="hidden">Music Mixer</h1>
+        </footer> 
+        <!-- <h1 class="hidden">Music Mixer</h1>
 
         <div id="background">  
 
-        </div>
+        </div> -->
         <script src="js/main.js"></script>
    </body>
     </html>

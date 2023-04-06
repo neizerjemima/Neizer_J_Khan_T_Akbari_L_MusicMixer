@@ -21,7 +21,9 @@ let characters = document.querySelectorAll(".characterHold, .small"),
     reloadPage = document.querySelector("#resetPage"),
     scroll = document.querySelector("#scroller"),
     volSlider = document,
-
+    howToButton = document.querySelector("#howTo-Btn"),
+    howToPlay = document.querySelector("#extra"),
+    closeBtn = document.querySelector("#extra button"),
     draggedPiece = null;
 
 const characterPieces = [...document.querySelectorAll('.character-pieces')],
@@ -378,6 +380,18 @@ function clicked() {
     }
 }
 
+function loadHowToPlay() {
+    if (howToPlay.style.display="none") {
+        howToPlay.style.display="grid"
+    }
+}
+
+function closeBox() {
+    if (howToPlay.style.display="grid") {
+        howToPlay.style.display="none"
+    }
+}
+
 // volumeControl.oninput = function (){
 //     audio.volume = volumeControl.value/100
 //     num.innerHTML= vol.value;
@@ -394,6 +408,10 @@ playButton.addEventListener("click", playAudio);
 pauseButton.addEventListener("click", pauseAudio);
 rewindButton.addEventListener("click", rewindAudio);
 reloadPage.addEventListener("click", resetPage);
+
+howToButton.addEventListener("click",loadHowToPlay);
+closeBtn.addEventListener("click", closeBox);
+
 volSlider.addEventListener('change', setVolume)
 characterPieces.forEach((item, i) => {
     let characterDimensions = item.getBoundingClientRect();
@@ -406,7 +424,7 @@ characterPieces.forEach((item, i) => {
     downBtn[i].addEventListener('click', () => {
         item.scrollTop += characterHeight;
     })
-})
+});
 // anima.forEach. addEventListener('drop', toad);
 
 // scroll up and down
