@@ -218,7 +218,7 @@ button:hover {
 	display: block;	
 	background: transparent url(../images/frog-anim.png) 0 0 no-repeat;
 	margin: 0 auto;
-	animation: frog 5s steps(28)infinite;
+	animation: frog 3s steps(28)infinite;
 }
 
 @keyframes frog {
@@ -267,7 +267,7 @@ button:hover {
     /* background-size: cover; */
 	margin-top: 5px;
     margin-bottom:0;
-	animation: smRed 2s steps(9)infinite;
+	animation: smRed 5s steps(9)infinite;
 }
 
 @keyframes smRed {
@@ -617,3 +617,29 @@ ul {
     font-size: 25px;
     margin-top: 20px;
 } */
+
+
+
+/* SOUND PAGE */
+
+.audioText { 
+    grid-column: 1/13;
+    grid-row: 1/2;
+}
+.audioText h1, .audioText h2, .audioText h3 {
+    text-align: center; 
+    color: white;
+}
+
+.characters {
+    margin-bottom: 50px;
+    background: #04853e3b;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.characters img { height: 250px;}
