@@ -470,88 +470,53 @@ ul {
 }
 
 /*---Footer-Top---*/
+
+#howToPlay {
+    grid-column: 3/10;
+}
+
 #extra {
-    background-color: #2989CA;
-    height: 290px;
-    font-size: 15px;
+    display: none;
+    background-color: #298acac7;
+    border-radius: 5rem;
+    height: fit-content;
+    /* font-size: 15px; */
+    /* padding: 50px 0; */
+    justify-content: center;
+    /* line-height: 30px; */
+    color: white;
 }
 
-#extra-icons {
-    color: #fff;
-    /* margin-top: -170px; */
-    /* grid-column: 3/4; */
-    /* margin-left: 0; */
-    font-size: 3rem;
-}
 
-#downloadIcon {
-    margin-top: -173px;
-    margin-left: 55px;
-    grid-column: 1/2;
-}
-
-#shareIcon {
-    margin-top: -170px;
-    /* margin-left: 0px; */
-    grid-column: 3/4;
-}
-
-#musicIcon {
-    margin-top: -170px;
-    margin-left: 40px;
-    grid-column: 10/11;
+#extra button {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-radius: 1rem;
+    width: min-content;
+    line-height: 15px;
 }
 
 #extra h2 {
-    margin-top: 39px;
-    margin-left: 120px;
+    font-size: 30px;
+    text-align: center;
+    /* margin-top: -40px; */
+    margin-bottom: 0;
 }
 
-.download {
-    background-color: #2D3695;
-    height: 107px;
-    width: 400px;
-    border-radius: 90px;
-    grid-column: 1/4;
-    margin-top: 90px;
-    margin-left: 15px;
+#extra h3 {
+    font-size: 23px;
+    font-weight: lighter;
+    line-height: 35px;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
-
-.share {
-    background-color: #2D3695;
-    height: 107px;
-    width: 267px;
-    border-radius: 90px;
-    grid-column: 6/8;
-    margin-top: 90px;
-}
-
-.sound {
-    background-color: #2D3695;
-    height: 107px;
-    width: 400px;
-    border-radius: 90px;
-    grid-column: 10/-1;
-    margin-top: 90px;
-}
-
-#first {
-    margin-right: 20%;
-}
-
-.fa-share {
-    margin-left: 30rem;
-    margin-top: 11px;
-}
-
-.fa-music {
-    margin-left: 65rem;
-    margin-top: 11px;
-}
-
 /*---Footer---*/
 
 /*---Footer---*/
+
 
 .footer-con {
     background-color: #0CA146;
@@ -561,7 +526,7 @@ ul {
     column-gap: 20px ;
     padding: 0 88px;
     line-height: 40px;
-    margin-top: 15%;
+    /* margin-top: 15%; */
 }
 
 #footer-icons {
