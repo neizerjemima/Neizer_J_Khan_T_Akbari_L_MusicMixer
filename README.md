@@ -1,16 +1,12 @@
 # Music Mixer
 
 TODO: Write a project description
-This project is a drag and drop music mixer which makes use of html, css and javascript to create responsive icon upon moving(dragging) them from a drag panel to placing them into their drop panel. The responsive icon will have audio that play upon the drag and drop has taken place.
+This project is a drag and drop music mixer which makes use of html, css and javascript to create responsive icon upon moving (dragging) them from a drag panel to placing them into their drop panel. In this project, we chose the forest theme and the icons are forest animals that can be dragged and placed in the tree house and the lake. By scrolling the characters section, you can select the desired character and place each of them in each of the defined sections of the panel. Each responsive icon/character has different audio that after dragging and dropping them on the panel, by clicking on the play button, their song will be played and they will start moving based on the animation designed for each.
 
-## Installation
-
-TODO: Describe the installation process
 
 ## Usage
-This project can be used i
+This project can be used as a game for any age.
 
-TODO: Write usage instructions
 
 ## Contributing
 
@@ -20,14 +16,10 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-TODO: Write history
-
 ## Credits
 
-TODO: Write credits
+TODO: Write credits: http://www.java2s.com/ref/javascript/javascript-dom-html-audio-volume-property-set.html#:~:text=document.,volume%20of%20the%20audio%20player. https://www.w3schools.com/
 
 ## License
 
-TODO: Write license
+MIT
