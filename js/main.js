@@ -392,6 +392,15 @@ function closeBox() {
     }
 }
 
+// change volume
+
+function setVolume() {
+    const volume = volumeControl.value / 100;
+    audioLoops.forEach(audio => {
+        audio.volume = volume;
+    });
+}
+
 // volumeControl.oninput = function (){
 //     audio.volume = volumeControl.value/100
 //     num.innerHTML= vol.value;
@@ -427,5 +436,5 @@ characterPieces.forEach((item, i) => {
 });
 // anima.forEach. addEventListener('drop', toad);
 
-// scroll up and down
+
 
