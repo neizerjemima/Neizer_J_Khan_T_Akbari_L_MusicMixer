@@ -4,8 +4,6 @@
         <meta charset="UTF-8">
         <title>Music Mixer</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat" rel="stylesheet"> -->
         <script src="https://kit.fontawesome.com/fe8842756b.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,12 +25,9 @@
                </ul>
             </nav>
 
-            <div id="icons">
-                <!-- <h2 class="hidden">Header icons</h2> -->
-             
+            <div id="icons">             
                     <li> <a href="#"><i class="fa-solid fa-expand"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-gear"></i></a></li>
-                
             </div>
             <section id="start-button">
                 <h2 id="fun"><a href="#">DRAG n' DROP! <br> Music Mixer</a></h2>
@@ -75,37 +70,29 @@
                         <button id="rewindButton"><i class="fa-sharp fa-solid fa-backward"></i></button>
                         <button id="resetPage"><i class="fa-solid fa-arrows-rotate"></i></button>
                         <div class="mike-icon" id="volumeButton" value="HIDE/SHOW" onclick="clicked()"></div>
-                        <!-- <div class="mike-icon" id="volumeButton" value="HIDE/SHOW" onclick="clicked()"><img src="images/volume-icon.svg"></div> -->
                         <div class="box" id="volumeControl">
                             <div class="slider">
                                 <input type="range" class="range" value="0" min="0" max="100" anmousemove="rangeSlider(this.value)">
                             </div>
-                            <!-- <span class="value" id="rangeValue">100</span> -->
                         </div>
-
-                        <!-- <button id="volumeButton"><i class="fa-regular fa-volume"></i></button> -->
-                        <!-- <input id="volumeControl" type="range" min="0" max="100" step="1"><i class="fa-regular fa-volume"></i>           -->
                     </div>
 
-                    <audio id="audio" src="A_udio/Sound_1.mp3"></audio>
+                    <audio id="audio" src="audio/Sound_1.mp3"></audio>
                 </section>
-                <!-- <div class="anim"></div> -->
             <section id="howToPlay">
                 <h2 class="hidden">how to window</h2>
                 <div class="howToPlay" id="extra">
                     <button>x</button>
                     <h2>
-                        <!-- Welcome to Singing Tree, a Drag n' Drop Mixer! -->
-                        <br>
                         HOW TO PLAY
                     </h2>                        
                     <h3>
                     <ul>
                         <li>1. Scroll through the Critters on the right and drop them into the dotted zones</li>
-                        <li>2. Test them out by clicking the play button, 
+                        <li>2. Test them out and start the music by clicking the play button, 
                             <br> &emsp; (you can also test their sounds by clicking the 'SOUNDS' tab above).
                         </li>
-                        <li>3. Place as many characters into the treehouse and pond as yoy like!
+                        <li>3. Place as many characters into the treehouse and pond as you like!
                             <br> &emsp; Mix & Match or Play them all at once!
                         </li>
 
@@ -148,11 +135,6 @@
             </nav>
                 
         </footer> 
-        <!-- <h1 class="hidden">Music Mixer</h1>
-
-        <div id="background">  
-
-        </div> -->
         <script src="js/main.js"></script>
    </body>
     </html>
