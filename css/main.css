@@ -476,7 +476,7 @@ ul {
 }
 
 #extra {
-    display: none;
+    display: grid;
     background-color: #298acac7;
     border-radius: 5rem;
     height: fit-content;
